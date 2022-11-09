@@ -1,0 +1,46 @@
+footer{}
+//====================================================================================================
+.container {}
+.footer-body {
+	@include flexbox();
+	justify-content: space-between;
+	align-items: center;
+	height: 125px;
+	padding: 15px 0;
+	@media (max-width: $md2+px){
+		flex: direction-column;
+		height: auto;
+		
+	}
+}
+.footer-body__column {
+	
+	@media (max-width: $md2+px){
+		&:first-child{
+		@include flexorder(2);	
+		}
+		&:last-child{
+		@include flexorder(1);		
+		}
+		
+
+		
+	}
+}
+.footer-text {
+
+font-family: 'PT Sans';
+font-size: 15px;
+line-height: 25px;
+font-weight: 400;
+color: #4d4d4d;
+text-decoration: underline;
+@media (max-width: $md2+px){
+		text-align: center;
+
+		
+	}
+}
+.footer-logo {}
+//====================================================================================================
+
